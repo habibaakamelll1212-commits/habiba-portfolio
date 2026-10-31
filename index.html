@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Habiba | Portfolio</title>
     </head>
+    
 <body>
 
 
@@ -21,7 +22,7 @@
 
             <h1>Habiba Kamel</h1>
 
-            <h2>Software Engineer</h2>
+            <h2 id="typing-text"></h2>
 
             <p>
                 I am a Computer Science student passionate about
@@ -30,7 +31,8 @@
 
             <a href="#projects">View My Work</a>
 
-            <a href="#contact">Contact Me</a>
+        <a href="#contact" id="contactBtn">Contact Me</a>
+        <p id="message"></p>
         </div>
 
     </section>
@@ -122,30 +124,37 @@
         
 
 
-            <article>
-                <h3>Task 02</h3>
+    
 
-                <p>
-                    My second web development task.
-                </p>
+<article>
+    <h3>Task 1 - My First HTML Website</h3>
 
-                <p>HTML & CSS</p>
+    <p>
+        My first HTML website using headings,
+        paragraphs, nested lists and hyperlinks.
+    </p>
 
-                <a href="#">View Project</a>
-            </article>
+    <p>HTML</p>
 
+    <a href="TASKS/task1.html" target="_blank">
+        View Project
+    </a>
+</article>
 
-            <article>
-                <h3>Task 03</h3>
+<article>
+    <h3>Task 2 - Student Information Table</h3>
 
-                <p>
-                    More projects will be added here.
-                </p>
+    <p>
+        An HTML table using rowspan and colspan.
+    </p>
 
-                <p>HTML, CSS & JavaScript</p>
+    <p>HTML</p>
 
-                <a href="#">View Project</a>
-            </article>
+    <a href="TASKS/table.html" target="_blank">
+        View Project
+    </a>
+</article>
+
 
         </div>
 
@@ -172,6 +181,19 @@
 
             <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
         </div>
+        <form id="contactForm">
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <input type="email" id="email" placeholder="Your Email">
+
+    <textarea id="userMessage" placeholder="Your Message"></textarea>
+
+    <button type="submit">Send Message</button>
+
+    <p id="formMessage"></p>
+
+</form>
 
     </div>
 
@@ -184,6 +206,6 @@
     </p>
 
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

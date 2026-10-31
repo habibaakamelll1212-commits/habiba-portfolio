@@ -665,3 +665,94 @@ footer {
     font-size: 14px;
     background: rgba(8, 11, 24, 0.5);
 }
+section {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1.2s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 550px;
+    margin: 35px auto 0;
+    text-align: left;
+}
+
+/* Input Fields */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 15px 18px;
+    background: rgba(17, 22, 41, 0.8);
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    border-radius: 12px;
+    color: #f8fafc;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Placeholder */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #a5b0c2;
+}
+
+/* Focus Effect */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+}
+
+/* Message Box */
+#contactForm textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Send Button */
+#contactForm button {
+    padding: 15px;
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.4);
+}
+
+/* Form Message */
+#formMessage {
+    text-align: center;
+    color: #a78bfa;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    #contact > div {
+        padding: 30px 20px;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
+}
